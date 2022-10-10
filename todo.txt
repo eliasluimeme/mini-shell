@@ -1,0 +1,112 @@
+echo -\n hey
+echo \-n hey
+echo - n
+/bin/echo " \" "
+/bin/echo " \$ "
+/bin/echo " \$LESS " ->>>  $ expander
+/bin/echo " \$? "
+
+cd -
+cd //
+cd '' 
+cd ~
+cd //home
+
+| ls
+ls | 
+
+echo $test ->> export or expander
+export A='   bonjour   je   suis  splited ' ; echo "$A"
+export A='   bonjour   je   suis  splited ' ; echo $A
+export A='   bonjour   je   suis  splited ' ; echo @$A@
+export A='   bonjour   je   suis  splited ' ; echo @"$A"@       ->> expander
+export lol=""
+export test=$test"coucou"
+export zz zzz= zzzz=asd
+export A=a B=b C=c D=d E=e F=f G=g H=h I=i J=j K=k L=l M=m N=n O=o P=p Q=q R=r
+Export B=bonjour
+exporT B=bonjour
+
+asdf | echo bonjour        /// error then execute echo
+
+
+
+// check these protections:
+##########Protections#########
+'echo' "bonjour" "wesh"
+e"ch"o bonjour
+       'ech'o bonjour
+#echappement tout seul
+echo\ bonjour
+\ echo bonjour
+ \ echo bonjour
+                 \ echo bonjour
+ \                 echo bonjour
+                 \                    echo bonjour
+echo lol\ \ \ \coucou
+\ \ \ \ \ \ mdr
+echo \hey
+ech\o bonjour
+echo b\onjour
+ech\o bonjour
+echo \$PATH
+echo \\\\coucou
+echo \\coucou
+echo \"bonjour""
+echo \'\'\''' bonjour "" | cat -e
+e\c\h\o b\on\njour
+echo \ \ jesuis \|\| \ charles
+#doubles quotes
+"" "" echo minishell
+""echo minishell
+"ec''ho" bonjour
+"ec'''ho" bonjour
+echo "\\"
+echo "" coucou | cat -e
+echo bon""jour
+echo """""mdrr"
+echo ''""
+echo ''""''
+echo """"bonjour"" "" | cat -e
+"echo bonjou"""r
+"echo""" ''bonjour
+echo "$wfjwefielwhfhlwefkhwefwe" a
+ls "-lR""-a"
+echo bonjour 1>"hey" pas normal
+echo bonjour 1> "wesh alors" hey
+echo "" mdr "" | cat -e
+echo bonjour 1>'"' pas normal
+echo bonjour 1> "hey""" pas normal
+echo bonjour 1> "hey"'' pas normal
+echo bon"jo\"u"r
+echo bon"jo\\"u"r"
+echo bon"jo\"''\"\"\'$u\\'\$"r
+echo b"\ \ \ onjour"
+echo "b\on\j\our"
+echo "b\\onjour\\"
+"$'PATH'"
+"echo '\$HOME'"
+"echo ' \"\$HOME\" '"
+"echo \"'\$HOME'\""
+"echo \" '\$PWD' \\\"\$PWD\\\" '\$PWD' \"" "echo \"\\\$HOME\""
+"echo \"'\$'\""
+"echo \\\\\n"
+echo\" bonjour\"
+echo "mdrrr >coucou >> ceci n'est pas une redirection"
+echo a; echo b; echo c; echo d; echo e; echo f; echo g; echo h; echo i;echo j;
+echo a;
+#simples quotes
+'$PATH'
+'$\PATH'
+'' echo minishell
+'echo "$HOME"'
+echo co'c"o"u'
+'echo" bonjour"'
+echo 'cou""c""ou"'
+echo bo'njou\r'
+echo 'cou\"\"\\c""ou"'
+echo '      cou    "cou"'
+echo bo'njou\$r'
+e'ch\\o' 'bonj'\o\u'r'
+echo '' '' 'bonjour' | cat -e
+echo '''''' | cat -e
